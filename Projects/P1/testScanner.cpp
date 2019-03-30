@@ -25,6 +25,6 @@ void testScanner(string filename){
         scanner(c1);
 
 //        cout << c1 << endl;
-        cout << c2 << " peek" << endl;
+//        cout << c2 << " peek" << endl;
     }
 }

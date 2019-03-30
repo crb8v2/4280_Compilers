@@ -3,11 +3,15 @@
 //
 
 #include "scanner.h"
+#include "testScanner.h"
 #include "token.h"
 
 void scanner(char c1){
     // run char against FSA table
-            cout << c1 << endl;
+    cout << c1 << endl;
+
+//    //id what type of char - uc, lc, sym, eof
+    typeOfChar(c1);
 }
 
 string FSATable() {
@@ -60,6 +64,25 @@ string FSATable() {
     return tableString;
 
 }
+
+
+
+void typeOfChar(char c1){
+
+    if(isalpha(c1) && islower(c1)) {
+        cout << "lowercase" << endl;
+    }else if(isalpha(c1 && isupper(c1))) {
+        cout << "uppercase" << endl;
+    }else if(isdigit(c1)){
+        cout << "digit" << endl;
+    }else{
+        cout << "symbol" << endl;
+    }
+
+
+}
+
+
 
 void error(){
     cout << "an error has taken place on line...";

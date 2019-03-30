@@ -11,7 +11,7 @@ HEADER = node.h
 all: $(TARGET1)
 
 scanner: $(OBJS1) $(OBJS2) $(OBJS3)
-	$(CC) $(CFLAGS) -o scanner main.o scanner.cpp testScanner.cpp prefilter.cpp
+	$(CC) $(CFLAGS) -o scanner main.o testScanner.cpp scanner.cpp prefilter.cpp postfilter.cpp
 
 %.o: %.c  $(HEADER)
 	g++ -c $(CFLAGS) $*.cpp -o $*.o

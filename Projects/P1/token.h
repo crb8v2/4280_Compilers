@@ -10,8 +10,14 @@
 #include <fstream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string>
+//#include <locale>         // std::locale, std::isalpha
 
 using namespace std;
+
+//THIS IS RESPONSIBLE FOR THE PROGRAMS STATE
+//int state = 1;
 
 struct token {
     std::string tokenID;
@@ -19,6 +25,10 @@ struct token {
     int lineNumber;
 };
 
+struct symbolKey {
+    int key;
+    int value;
+};
 
 
 #endif //P1_TOKEN_H

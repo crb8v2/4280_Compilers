@@ -12,35 +12,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="967ce606-dbb4-45cf-b76d-60b962985389" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postfilter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postfilter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prefilter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prefilter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw0/Homework0.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw0/Homework1.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw1/H1_sol-1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw1/Homework0.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw1/Homework1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw2/IMG_0636.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw2/IMG_0637.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw3/Instructions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Homework/hw3/notes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/.idea/P0.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/.idea/dictionaries/crbaniak.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/Instructions/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/Instructions/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/Instructions/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/Instructions/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/Instructions/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/P0_test1.input1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/P0_test2.input1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/P0_test3.input1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/P0.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/P0.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/P0.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/P0.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/P0.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/P0.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/P0.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/P0.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/node.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/out.inorder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/out.postorder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/out.preorder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/tree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P0/tree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P1.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/P1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/P1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw.input1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scanner" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/scanner.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postfilter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/postfilter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/scanner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scanner.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testScanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/testScanner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testScanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/testScanner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testScanner.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/toScanner.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/token.h" beforeDir="false" afterPath="$PROJECT_DIR$/token.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -66,23 +107,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Makefile" value="122" />
-          <entry key="cpp" value="2335" />
-          <entry key="h" value="252" />
+          <entry key="Makefile" value="394" />
+          <entry key="cpp" value="2850" />
+          <entry key="h" value="478" />
           <entry key="input1" value="33" />
           <entry key="txt" value="252" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="2587" />
-          <entry key="PLAIN_TEXT" value="407" />
+          <entry key="ObjectiveC" value="3328" />
+          <entry key="PLAIN_TEXT" value="679" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Makefile" value="2" />
-          <entry key="cpp" value="12" />
+          <entry key="Makefile" value="3" />
+          <entry key="cpp" value="14" />
           <entry key="h" value="8" />
           <entry key="input1" value="4" />
           <entry key="jpg" value="1" />
@@ -92,20 +133,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="ObjectiveC" value="20" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="ObjectiveC" value="22" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7238267">
+    <splitter split-orientation="horizontal" split-proportion="0.68095237">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
+                <state relative-caret-position="-45">
                   <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
                   <folding>
                     <element signature="e#31#51#0" expanded="true" />
@@ -117,8 +158,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/token.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
                   <folding>
                     <element signature="e#82#101#0" expanded="true" />
                   </folding>
@@ -126,11 +167,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/prefilter.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+                <state relative-caret-position="495">
+                  <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -138,20 +179,38 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scanner.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scanner.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+                  <folding>
+                    <element signature="e#41#61#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scanner.cpp">
+            <entry file="file://$PROJECT_DIR$/Makefile">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#41#61#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="330">
+                  <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/postfilter.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -160,11 +219,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/testScanner.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="38" selection-start-line="27" selection-end-line="28" />
+                <state relative-caret-position="345">
+                  <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
                   <folding>
                     <element signature="e#41#65#0" expanded="true" />
                   </folding>
@@ -172,11 +231,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/P1_test3.input1">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+                <state relative-caret-position="45">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -200,23 +259,23 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.txt" />
-        <option value="$PROJECT_DIR$/postfilter.cpp" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/P1_test3.input1" />
         <option value="$PROJECT_DIR$/prefilter.h" />
         <option value="$PROJECT_DIR$/testScanner.h" />
-        <option value="$PROJECT_DIR$/token.h" />
-        <option value="$PROJECT_DIR$/scanner.h" />
-        <option value="$PROJECT_DIR$/scanner.cpp" />
-        <option value="$PROJECT_DIR$/testScanner.cpp" />
         <option value="$PROJECT_DIR$/prefilter.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/scanner.h" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/token.h" />
+        <option value="$PROJECT_DIR$/postfilter.cpp" />
+        <option value="$PROJECT_DIR$/testScanner.cpp" />
+        <option value="$PROJECT_DIR$/scanner.cpp" />
       </list>
     </option>
   </component>
@@ -227,9 +286,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="176" />
+    <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1348" />
+    <option name="width" value="1302" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -306,17 +365,18 @@
       <workItem from="1553617497714" duration="101000" />
       <workItem from="1553632913072" duration="10959000" />
       <workItem from="1553710394582" duration="9674000" />
-      <workItem from="1553964946024" duration="8701000" />
+      <workItem from="1553964946024" duration="15214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33965000" />
+    <option name="totallyTimeSpent" value="40478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="176" y="24" width="1348" height="1056" extended-state="4" />
+    <frame x="65" y="24" width="1302" height="1056" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14900154" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1544586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +388,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21659483" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21659483" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" />
@@ -371,20 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postfilter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postfilter.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -399,53 +445,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/P1_test3.input1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/token.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="450">
+          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
           <folding>
             <element signature="e#82#101#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanner.h">
+    <entry file="file://$PROJECT_DIR$/postfilter.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scanner.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="e#41#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testScanner.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="38" selection-start-line="27" selection-end-line="28" />
-          <folding>
-            <element signature="e#41#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P1_test3.input1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="-45">
           <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
             <element signature="e#31#51#0" expanded="true" />
@@ -455,8 +488,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prefilter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state relative-caret-position="495">
+          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testScanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#41#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

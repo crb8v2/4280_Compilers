@@ -7,7 +7,10 @@
 
 #include "token.h"
 
+
+void typeOfChar(char);
 void scanner(char);
+
 void FSA_table();
 
 #endif //P1_SCANNER_H
