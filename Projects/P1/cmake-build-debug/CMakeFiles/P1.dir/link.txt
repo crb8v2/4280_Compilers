@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/P1.dir/main.cpp.o CMakeFiles/P1.dir/scanner.cpp.o CMakeFiles/P1.dir/testScanner.cpp.o CMakeFiles/P1.dir/prefilter.cpp.o CMakeFiles/P1.dir/postfilter.cpp.o  -o P1 

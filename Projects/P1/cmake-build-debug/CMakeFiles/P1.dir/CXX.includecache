@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/main.cpp
+iostream
+-
+fstream
+-
+
+/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/scanner.cpp
+scanner.h
+/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/scanner.h
+
+/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/scanner.h
+
+/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/testScanner.cpp
+testScanner.h
+/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/testScanner.h
+
+/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/testScanner.h
+
