@@ -4,27 +4,13 @@
 
 #include "token.h"
 
-// IDTK check for keyword
-// SYMTK for correct symbol
-//
-//symbolKey charLookup[19] = {
-//        {'=', 0},
-//        {'<', 1},
-//        {'>', 2},
-//        {'!', 3},
-//        {':', 4},
-//        {'+', 5},
-//        {'-', 6},
-//        {'*', 7},
-//        {'/', 8},
-//        {'%', 9},
-//        {'.', 10},
-//        {'(', 11},
-//        {')', 12},
-//        {',', 13},
-//        {'{', 14},
-//        {'}', 15},
-//        {';', 16},
-//        {'[', 17},
-//        {']', 18}
-//};
+void postfilter(int comingIn){
+
+    if(comingIn == 333){
+        //id the symbol
+    } else if (comingIn == 111){
+        //check for keyword, else return IDTK
+    }
+
+}
+

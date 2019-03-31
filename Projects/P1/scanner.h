@@ -7,7 +7,7 @@
 
 #include "token.h"
 
-void scanner(char, int);
+void scanner(char, char, int);
 int typeOfChar(char);
 int FSATable(int, int);
 

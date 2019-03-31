@@ -5,8 +5,9 @@
 #include "scanner.h"
 #include "testScanner.h"
 #include "token.h"
+#include "postfilter.h"
 
-void scanner(char c1, int state){
+void scanner(char c1, char c2, int state){
     // run char against FSA table
     cout << c1 << endl;
 
@@ -15,13 +16,67 @@ void scanner(char c1, int state){
     int charType = typeOfChar(c1);
 
     //check fsa table
-   int word = FSATable(state, charType);
-   cout << word << endl;
+   int column = FSATable(state, charType);
+
+       switch(column) {
+       case 001:
+           cout << "state changed to 1" << endl;
+           state = 1;
+           break;
+       case 002:
+           cout << "state changed to 2" << endl;
+           state = 2;
+           break;
+       case 003:
+           cout << "state changed to 3 = SYMTK, new state = 1" << endl;
+           postfilter(333);
+           state = 1;
+           break;
+       case 004:
+           cout << "state changed to 4" << endl;
+           state = 4;
+           break;
+       case 111:
+           cout << "IDTK" << endl;
+           break;
+
+           case 222:
+               cout << "INTTK" << endl;
+               break;
+
+           case 333:
+               cout << "SYMTK" << endl;
+               break;
+
+           case 999:
+               cout << "EOFTK" << endl;
+               break;
+
+           case 666:
+               //needs to tell line number here
+               fprintf(stderr, "IDTK can not start with lowercase letter. \n");
+               exit(EXIT_FAILURE);
+   }
 }
 
 int FSATable(int state, int col) {
 
-    int FSA_Table[4][6] = {
+    /*
+     * STATES:
+     * 1 = 001
+     * 2 = 002
+     * 3 = 003
+     * 4 = 004
+     *
+     * TOKENS:
+     * IDTK  = 111
+     * INTTK = 222
+     * SYMTK = 333
+     * ERROR = 999
+     *
+     */
+
+    int FSA_Table[4][5] = {
             {666, 004, 002, 003, 999},
             {222, 222, 002, 222, 222},
             {333, 333, 333, 333, 333},
@@ -41,72 +96,20 @@ int typeOfChar(char c1){
     int tableColumn = -1;
 
     if(isalpha(c1) && islower(c1)) {
-        cout << "lowercase" << endl;
+//        cout << "lowercase" << endl;
         tableColumn = 0;
     }else if(isalpha(c1) && isupper(c1)) {
-        cout << "uppercase" << endl;
+//        cout << "uppercase" << endl;
         tableColumn = 1;
     }else if(isdigit(c1)){
-        cout << "digit" << endl;
+//        cout << "digit" << endl;
+        tableColumn = 2;
+    }else{                          //works
+//        cout << "symbol" << endl;
         tableColumn = 3;
-    }else{
-        cout << "symbol" << endl;
-        tableColumn = 4;
+
     }
 
     return tableColumn;
 
 }
-
-
-
-void error(){
-    cout << "an error has taken place on line...";
-    exit(0);
-}
-
-
-
-
-//    //create FSA table
-//    string FSA_table[4][6];
-//    FSA_table[0][0] = "error";
-//    FSA_table[0][1] = "S4";
-//    FSA_table[0][2] = "S2";
-//    FSA_table[0][3] = "S3";
-//    FSA_table[0][4] = "S1";
-//    FSA_table[0][5] = "EOFTK";
-//
-//    FSA_table[1][0] = "INTTK";
-//    FSA_table[1][1] = "INTTK";
-//    FSA_table[1][2] = "S2";
-//    FSA_table[1][3] = "INTTK";
-//    FSA_table[1][4] = "INTTK";
-//    FSA_table[1][5] = "INTTK";
-//
-//    FSA_table[2][0] = "SYMTK";
-//    FSA_table[2][1] = "SYMTK";
-//    FSA_table[2][2] = "SYMTK";
-//    FSA_table[2][3] = "SYMTK";
-//    FSA_table[2][4] = "SYMTK";
-//    FSA_table[2][5] = "SYMTK";
-//
-//    FSA_table[3][0] = "S4";
-//    FSA_table[3][1] = "S4";
-//    FSA_table[3][2] = "S4";
-//    FSA_table[3][3] = "IDTK";
-//    FSA_table[3][4] = "IDTK";
-//    FSA_table[3][5] = "IDTK";
-
-
-//    for(int i=0; i<3; i++)    //This loops on the rows.
-//    {
-//        for(int j=0; j<5; j++) //This loops on the columns
-//        {
-//            cout << FSA_table[i][j]  << "  ";
-//        }
-//        cout << endl;
-//    }
-//
-//    cout << endl;
-//    cout << endl;
