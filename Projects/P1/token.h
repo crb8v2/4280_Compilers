@@ -16,9 +16,6 @@
 
 using namespace std;
 
-//THIS IS RESPONSIBLE FOR THE PROGRAMS STATE
-//int state = 1;
-
 struct token {
     std::string tokenID;
     int tokenInstance;

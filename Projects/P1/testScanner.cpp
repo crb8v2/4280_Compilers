@@ -7,9 +7,8 @@
 #include "scanner.h"
 
 void testScanner(string filename){
-
-    // go through file char by char and compare input to the fsa table.
-    // get char by char w lookaheadand use FSA table
+    //THIS IS RESPONSIBLE FOR THE PROGRAMS STATE
+    int state = 0;
 
     ifstream infile(filename.c_str());
 
@@ -22,7 +21,7 @@ void testScanner(string filename){
             break;
 
         //call scanner
-        scanner(c1);
+        scanner(c1, state);
 
 //        cout << c1 << endl;
 //        cout << c2 << " peek" << endl;
