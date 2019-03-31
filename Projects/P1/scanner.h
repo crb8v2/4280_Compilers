@@ -7,8 +7,12 @@
 
 #include "token.h"
 
-void scanner(char, char, int);
+int scanner(char, char, int, int);
 int typeOfChar(char);
 int FSATable(int, int);
+int makeDigit(char, char, int, int);
+void makeSymbol(char, int);
+void printTokens();
+int makeID(char, char, int, int);
 
 #endif //P1_SCANNER_H

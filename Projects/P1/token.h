@@ -12,19 +12,15 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string>
+#include <iomanip>
 //#include <locale>         // std::locale, std::isalpha
 
 using namespace std;
 
 struct token {
-    std::string tokenID;
-    int tokenInstance;
-    int lineNumber;
-};
-
-struct symbolKey {
-    int key;
-    int value;
+    string tokenID;
+    string tokenLiteral;
+    int linecount;
 };
 
 

@@ -34,24 +34,19 @@ void createRawFile(string filename){
 }
 
 void writeToRawFile(string filename){
-
     ifstream infile(filename.c_str());
     ofstream outfile("raw.input1");
     string content = "";
-    int i;
+    int ii;
 
-    for(i=0 ; infile.eof()!=true ; i++) // get content of infile
+    for(ii=0 ; infile.eof()!=true ; ii++) // get content of infile
         content += infile.get();
 
-    i--;
     content.erase(content.end()-1);     // erase last character
-
-    cout << i << " characters read...\n";
     infile.close();
 
     outfile << content;                 // output
     outfile.close();
-
 }
 
 int main(int argc, char *argv[]) {
@@ -66,6 +61,8 @@ int main(int argc, char *argv[]) {
         // argv[1] is filename (second param)
         filename = argv[1];
 
+        filename.append(".input1");
+
         writeToRawFile(filename);
 
     } else if (argc > 2) {              // else error
@@ -76,6 +73,7 @@ int main(int argc, char *argv[]) {
 
     prefilter("raw.input1");
     testScanner("toScanner.txt");
+
 
     return 0;
 }
