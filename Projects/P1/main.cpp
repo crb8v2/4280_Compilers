@@ -4,11 +4,11 @@
 
 #include "scanner.h"
 #include "token.h"
-#include "prefilter.h"
 #include "testScanner.h"
 
 #include <stdio.h>
 
+//creates a raw file of the user input / pipe
 void createRawFile(string filename){
     //output stream and .dat filename
     ofstream datFile;
@@ -25,14 +25,10 @@ void createRawFile(string filename){
         datFile << input << "\n";
     }
 
-    datFile << "\n\n";
-
-    //close file
     datFile.close();
-
-    cout << endl << endl;
 }
 
+// take input file and convert to raw file
 void writeToRawFile(string filename){
     ifstream infile(filename.c_str());
     ofstream outfile("raw.input1");
@@ -44,9 +40,15 @@ void writeToRawFile(string filename){
 
     content.erase(content.end()-1);     // erase last character
     infile.close();
-
     outfile << content;                 // output
     outfile.close();
+}
+
+//checks is a filename given exists
+bool fexists(string& filename)
+{
+    ifstream file(filename.c_str());
+    return (bool)file;
 }
 
 int main(int argc, char *argv[]) {
@@ -63,6 +65,10 @@ int main(int argc, char *argv[]) {
 
         filename.append(".input1");
 
+        if(fexists(filename) == false){     //check if file exists
+            fprintf(stderr, "File does not exists. \n");
+            exit(EXIT_FAILURE);
+        }
         writeToRawFile(filename);
 
     } else if (argc > 2) {              // else error
@@ -70,9 +76,8 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     };
 
-
-    prefilter("raw.input1");
-    testScanner("toScanner.txt");
+    prefilter("raw.input1");        // removes comments and get line number
+    testScanner("toScanner.txt");   // parses file char by char
 
 
     return 0;

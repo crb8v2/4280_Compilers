@@ -5,7 +5,6 @@
 #include "scanner.h"
 #include "testScanner.h"
 #include "token.h"
-#include "postfilter.h"
 
 char symbolSet[18] = {'=','<','>', ':', '+', '-', '*', '/', '%', '.', '(', ')',
                       ',', '{', '}', ';', '[', ']'};
@@ -13,12 +12,11 @@ char symbolSet[18] = {'=','<','>', ':', '+', '-', '*', '/', '%', '.', '(', ')',
 string keywords[12] = {"Begin", "End", "Loop", "Void", "INT", "Return", "Read",
                      "Output", "Program", "IFF", "Let", "Then"};
 
-
 token finalTokenSet[256];
-int tokenPos = 0;
+int tokenPos = 0;   // finalTokenSet placeholder
+int busy = 0;       // ignore lowercase if building an IDTK
 
-int busy = 0;   //ignore lowercase if building an IDTK
-
+// returns case based on FSA table
 int scanner(char c1, char c2, int state, int linecount){
 
     int charType = typeOfChar(c1);
@@ -52,14 +50,11 @@ int scanner(char c1, char c2, int state, int linecount){
            case 999:
                cout << "EOFTK" << endl;
                break;
-
            case 666:
-
-               if(busy == 1)
+               if(busy == 1) // allows lowercase letters if in IDTK
                    break;
-
                //needs to tell line number here
-               fprintf(stderr, "ERROR: IDTK can not start with lowercase letter. \n");
+               fprintf(stderr, "ERROR: Line#: %d \n    IDTK can not start with lowercase letter. \n", linecount);
                exit(EXIT_FAILURE);
    }
 
@@ -96,43 +91,40 @@ int FSATable(int state, int col) {
 
 }
 
+// idenifies type of char on the FSA Table
 int typeOfChar(char c1){
 
     int tableColumn = -1;
 
-    if(isalpha(c1) && islower(c1)) {
-//        cout << "lowercase" << endl;
+    if(isalpha(c1) && islower(c1)) {        //lowercase
         tableColumn = 0;
-    }else if(isalpha(c1) && isupper(c1)) {
-//        cout << "uppercase" << endl;
+    }else if(isalpha(c1) && isupper(c1)) {  //uppercase
         tableColumn = 1;
-    }else if(isdigit(c1)){
-//        cout << "digit" << endl;
+    }else if(isdigit(c1)){                  //digit
         tableColumn = 2;
-    }else{                          //works
-//        cout << "symbol" << endl;
+    }else{                                  //symbol
         tableColumn = 3;
-
     }
-
     return tableColumn;
 }
 
+// creates an INTTK for as long as need be
 int makeDigit(char c1, char c2, int state, int linecount){
 
-    finalTokenSet[tokenPos].tokenLiteral += c1;
-    finalTokenSet[tokenPos].linecount = linecount;
+    finalTokenSet[tokenPos].tokenLiteral += c1;     //append number
+    finalTokenSet[tokenPos].linecount = linecount;  //linecount
 
     if(isdigit(c2)){
-        state = 1;
+        state = 1;      // send back to state 2 if digit
     } else {
         finalTokenSet[tokenPos].tokenID = "INTTK";
-        state = 0;
-        tokenPos++;
+        state = 0;      // send to initial state 1 if not a digit
+        tokenPos++;     // increment token array
     }
     return state;
 }
 
+// id SYMTK, symbol literal, and line num
 void makeSymbol(char c1, int linecount){
     int ii;
     for( ii = 0; ii < sizeof(symbolSet); ii++){
@@ -140,21 +132,20 @@ void makeSymbol(char c1, int linecount){
             finalTokenSet[tokenPos].tokenID = "SYMTK";
             finalTokenSet[tokenPos].tokenLiteral = c1;
             finalTokenSet[tokenPos].linecount = linecount;
-
-
             tokenPos++;
         }
     }
 }
 
+// makes an IDTK for as long as need be and checks for keyword token
 int makeID(char c1, char c2, int state, int linecount){
 
     finalTokenSet[tokenPos].tokenLiteral += c1;
     finalTokenSet[tokenPos].linecount = linecount;
-    busy = 1;
+    busy = 1;       // allows lowercase to pass through
 
-    if(isalpha(c2) || isdigit(c2)){
-        state = 3;
+    if(isalpha(c2) || isdigit(c2)){     //continue IDTK with letters or numbers
+        state = 3;      //state 4
     } else {
         //check if keyword
         int ii;
@@ -162,29 +153,27 @@ int makeID(char c1, char c2, int state, int linecount){
             if (finalTokenSet[tokenPos].tokenLiteral == keywords[ii]){
                 finalTokenSet[tokenPos].tokenID =  keywords[ii] + "TK";
                 break;
-            }else{
+            }else{      // not keyword
             finalTokenSet[tokenPos].tokenID = "IDTK";
             }
         }
 
-            state = 0;
-            tokenPos++;
-            busy = 0;
+            state = 0;      //state back to 1
+            tokenPos++;     //increment token array
+            busy = 0;       // no more allowing lowercase letters
     }
 
     return state;
 }
 
+// prints final token format: token, literal, line number
 void printTokens(){
     int ii = 0;
-
     cout << endl << endl;
-
     for(ii = 0; ii < tokenPos; ii++){
         cout << setw(8) << finalTokenSet[ii].tokenID << "  ";
         cout << setw(8) << finalTokenSet[ii].tokenLiteral << "  ";
         cout << setw(8) << "Line: " << finalTokenSet[ii].linecount << endl;
-
     }
     cout << "   EOFTK" << endl;
 }

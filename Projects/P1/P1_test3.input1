@@ -1,8 +1,9 @@
 // this is a comment
 Connor Baniak
     < Begin >
- X+ Xy X>Xyz
- Let X>3
- X123  4567
+ X+ Xy X>Xyz;
+ Let X>3;
+ X123  4567;
+ Return
  <End>
 // another
