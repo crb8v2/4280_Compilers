@@ -12,81 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74b3d4bb-3fde-4949-823a-f251798211a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw0/Homework0.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw0/Homework1.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw1/H1_sol-1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw1/Homework0.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw1/Homework1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw2/IMG_0636.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw2/IMG_0637.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw3/Instructions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Homework/hw3/notes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/P0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/crbaniak.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Instructions/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Instructions/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Instructions/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Instructions/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Instructions/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/P0_test1.input1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/P0_test2.input1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/P0_test3.input1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P0.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P0.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P0.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P0.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P0.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P0.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P0.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/P0.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out.inorder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out.postorder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out.preorder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../P2/parser.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../P1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/P1_test2.input1" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/P1_test2.input1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/P1_test3.input1" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/P1_test3.input1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../P1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/postfilter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/postfilter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../P1/scanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/scanner.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../P1/scanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/scanner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/testScanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/testScanner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/token.h" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/token.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/testScanner.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/testScanner.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,14 +32,14 @@
     <session id="674649329">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -297,17 +229,17 @@
       <workItem from="1551470583481" duration="30642000" />
       <workItem from="1552080907906" duration="645000" />
       <workItem from="1554070589683" duration="81000" />
+      <workItem from="1555890426536" duration="767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50351000" />
+    <option name="totallyTimeSpent" value="51118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="992" y="24" width="928" height="1056" extended-state="4" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20294784" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.207483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -318,7 +250,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30064654" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30064654" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="CMake" order="11" />
@@ -389,6 +321,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -403,13 +342,6 @@
           <folding>
             <element signature="e#79#98#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>
