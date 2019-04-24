@@ -10,9 +10,10 @@
 #include <string>
 
 struct node {
-    string label;
-    node* child1, *child2, *child3, *child4, *child5;
+
+    node *child0, *child1, *child2, *child3, *child4;
     token token_t;
+    string literal;
 };
 
 #endif //P1_NODE_H

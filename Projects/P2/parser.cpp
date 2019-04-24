@@ -4,43 +4,92 @@
 
 #include "parser.h"
 #include "node.h"
+#include "token.h"
+#include "scanner.h"
 
-token tk;
+string tk;
 FILE *fp = NULL;
 int lineNum = 0;
 int level = 0;
+static int tokenCounter = 0;
 
-node *getNode(string s) {
-    node *noder = new node;
-    noder->label = s;
-    return noder;
+node *createNode(string s) {
+    node *newNode = new node;
+    newNode-> literal = s;
+    return newNode;
 }
 
-//fix treep
 node *parser() {
-    node *treep;
-    //open file and delete one line
+    node *tree;
 //    tk = scanner(fp, lineNum);
-//    treep = prog_f();
+    tree = program();
 
     cout << "Parse OK\n";
-    return treep;
+    return tree;
 }
 
 //<program>  ->     PROGRAM <var> <block>
-node* prog_f() {
-    node *p = getNode("<program>");
+node *program() {
 
-//    if(tk.tokenId == PROG_tk) { // PROGRAM
-//        p->child1 = getNode("PROGRAM");
-////        tk = scanner(fp, lineNum); needs to call and pop file instead
-////        p->child2 = var_f();
-////        p->child3 = block_f();
-//        return p;
-//    } else {
-//        error("Got token " + tk.name + ", expected PROGRAM token\n");
-//    }
+    node *p = createNode("<program>");
 
-        cout << "we made it here" << endl;
+//    node->child_0 = vars();
+//    node->child_1 = block();
+
     return p;
 }
+
+
+//node *vars() {
+//    node_t *p = getNode("<var>");
+//
+//    if(tk.tokenId == DEL_tk && tk.name == "{"|| tk.tokenId == SCAN_tk || tk.tokenId == IF_tk || tk.tokenId == PRINT_tk ||
+//       tk.tokenId == LOOP_tk || tk.tokenId == IDENT_tk) { // empty
+//        return p;
+//    } else if(tk.tokenId == INT_tk) { // INTEGER
+//        p->child1 = getNode("INTEGER");
+//        p->child1->token_t = tk;
+//        tk = scanner(fp, lineNum);
+//        if(tk.tokenId == IDENT_tk) { // IDENTIFIER
+//            p->child2 = getNode("IDENTIFIER");
+//            p->child2->token_t = tk;
+//            tk = scanner(fp, lineNum);
+//            p->child3 = mvars_f();
+//            if (tk.tokenId == DEL_tk && tk.name == ";") { // ;
+//                //don't need to put delimiters in the tree
+//                tk = scanner(fp, lineNum);
+//                return p;
+//            } else {
+//                error("Got token " + tk.name + ", expected ; token\n");
+//            }
+//        } else {
+//            error("Got token " + tk.name + ", expected IDENTIFIER token\n");
+//        }
+//    } else {
+//        error("Got token " + tk.name + ", expected empty or INTEGER token\n");
+//    }
+//    return p;
+//}
+//
+//
+//node *block() {
+//    node_t *p = getNode("<block>");
+//
+//    if (tk.tokenId == DEL_tk && tk.name == "{") { // {
+//        //don't need to put delimiters in the tree
+//        tk = scanner(fp, lineNum);
+//        p->child1 = var_f();
+//        p->child2 = stats_f();
+//        if (tk.tokenId == DEL_tk && tk.name == "}") { // }
+//            //don't need to put delimiters in the tree
+//            tk = scanner(fp, lineNum);
+//            return p;
+//        } else {
+//            error("Got token " + tk.name + ", expected } token");
+//        }
+//    } else {
+//        error("Got token " + tk.name + ", expected { token");
+//    }
+//
+//    return p;
+//}

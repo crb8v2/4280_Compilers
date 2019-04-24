@@ -4,14 +4,15 @@ CFLAGS = -g
 TARGET1 = scanner
 OBJS1 = main.o
 OBJS2 = scanner.o
-ONJS = parser.o
+OBJS3 = parser.o
+OBJS4 = printTree.cpp
 HEADER = node.h
 
 
 all: $(TARGET1)
 
-scanner: $(OBJS1) $(OBJS2)
-	$(CC) $(CFLAGS) -o scanner main.o scanner.cpp parser.cpp
+scanner: $(OBJS1) $(OBJS2) $(OBJS3) $(OBJS4)
+	$(CC) $(CFLAGS) -o scanner main.o scanner.cpp parser.cpp printTree.cpp
 
 %.o: %.c  $(HEADER)
 	g++ -c $(CFLAGS) $*.cpp -o $*.o

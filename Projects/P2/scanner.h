@@ -7,6 +7,8 @@
 
 #include "token.h"
 
+extern token finalTokenSet[];
+
 void toScanner(string);
 void prefilter(string);
 int scanner(char, char, int, int);

@@ -225,7 +225,7 @@ int makeID(char c1, char c2, int state, int linecount){
 
 // prints final token format: token, literal, line number
 void printTokens(){
-    ofstream outfile ("tokenIDs.txt");
+//    ofstream outfile ("tokenIDs.txt");
     int ii = 0;
     cout << endl << endl;
     for(ii = 0; ii < tokenPos; ii++){
@@ -233,8 +233,8 @@ void printTokens(){
         cout << setw(10) << finalTokenSet[ii].tokenLiteral << "  ";
         cout << setw(10) << "Line: " << finalTokenSet[ii].linecount << endl;
 
-        outfile << finalTokenSet[ii].tokenID << endl;
+//        outfile << finalTokenSet[ii].tokenID << endl;
     }
     cout << "   EOFTK" << endl;
-    outfile.close();
+//    outfile.close();
 }

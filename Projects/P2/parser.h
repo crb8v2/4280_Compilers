@@ -7,7 +7,10 @@
 
 #include "node.h"
 
-node *getNode(string);
-node *parser();
+node* createNode(string);
+node* parser();
+node* program();
+node* vars();
+node* block();
 
 #endif //P1_PARSER_H

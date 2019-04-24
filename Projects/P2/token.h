@@ -13,7 +13,6 @@
 #include <ctype.h>
 #include <string>
 #include <iomanip>
-//#include <locale>         // std::locale, std::isalpha
 
 using namespace std;
 
