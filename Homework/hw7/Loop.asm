@@ -1,0 +1,13 @@
+READ x
+Above: LOAD x
+SUB 0
+BRNEG Out
+WRITE x
+LOAD x
+SUB 1
+STORE x
+BR Above
+Out: NOOP
+STOP
+x 0
+

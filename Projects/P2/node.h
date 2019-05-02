@@ -14,6 +14,7 @@ struct node {
     node *child0, *child1, *child2, *child3, *child4;
     token token_t;
     string literal;
+    int level;
 };
 
 #endif //P1_NODE_H

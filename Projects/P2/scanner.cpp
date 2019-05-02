@@ -14,9 +14,9 @@ string keywords[12] = {"Begin", "End", "Loop", "Void", "INT", "Return", "Read",
 token finalTokenSet[256];
 int tokenPos = 0;   // finalTokenSet placeholder
 int busy = 0;       // ignore lowercase if building an IDTK
+int fileSize;
 
 //PREFILTER
-
 void toScanner(string filename){
     int state = 0;          //program state
     int linecount = 0;      //line number holder
@@ -175,7 +175,7 @@ int makeDigit(char c1, char c2, int state, int linecount){
     if(isdigit(c2)){
         state = 1;      // send back to state 2 if digit
     } else {
-        finalTokenSet[tokenPos].tokenID = "INT_LIT_TK";
+        finalTokenSet[tokenPos].tokenID = "NUMTK";
         state = 0;      // send to initial state 1 if not a digit
         tokenPos++;     // increment token array
     }
@@ -184,10 +184,12 @@ int makeDigit(char c1, char c2, int state, int linecount){
 
 // id SYMTK, symbol literal, and line num
 void makeSymbol(char c1, int linecount){
+    string symtk = "SYMTK";
     int ii;
     for( ii = 0; ii < sizeof(symbolSet); ii++){
         if(c1 == symbolSet[ii]) {
-            finalTokenSet[tokenPos].tokenID = "SYMTK";
+            symtk += c1;
+            finalTokenSet[tokenPos].tokenID = symtk;
             finalTokenSet[tokenPos].tokenLiteral = c1;
             finalTokenSet[tokenPos].linecount = linecount;
             tokenPos++;
@@ -225,16 +227,20 @@ int makeID(char c1, char c2, int state, int linecount){
 
 // prints final token format: token, literal, line number
 void printTokens(){
-//    ofstream outfile ("tokenIDs.txt");
     int ii = 0;
+    int finalLine = 0;
     cout << endl << endl;
     for(ii = 0; ii < tokenPos; ii++){
         cout << setw(10) << finalTokenSet[ii].tokenID << "  ";
         cout << setw(10) << finalTokenSet[ii].tokenLiteral << "  ";
-        cout << setw(10) << "Line: " << finalTokenSet[ii].linecount << endl;
+        cout << setw(10) << "Line: " << finalTokenSet[ii].linecount + 1 << endl;
+        finalLine = finalTokenSet[ii].linecount;
 
-//        outfile << finalTokenSet[ii].tokenID << endl;
     }
-    cout << "   EOFTK" << endl;
-//    outfile.close();
+
+    fileSize = ii+1;
+    finalTokenSet[fileSize].tokenID = "EOFtk";
+    finalTokenSet[fileSize].linecount = finalLine + 1;
+
+    cout << "     " << finalTokenSet[fileSize].tokenID <<  endl;
 }

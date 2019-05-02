@@ -1,18 +1,15 @@
 #################
 ### Connor Baniak
-### 4280 - P1
+### 4280 - P2
 #################
 
-This project is using option 3. An FSA table and driver
-are used to preform lexical analysis.
+This project parses the test file for syntax and then builds a tree.
 
 GITHUB:
-    https://github.com/crb8v2/4280_Compilers/tree/master/Projects/P1
+    https://github.com/crb8v2/4280_Compilers/tree/master/Projects/P2
 
 SUMMARY:
-    Lexical analysis was used to parse a code segment into tokens.
-    Using the finite state automata table, INTTK, IDTK, SYMTK, and EOFTK
-    were determined.
+
 
 INPUT:
     No IDTK is allowed to start with a lowercase letter.
@@ -30,5 +27,6 @@ USAGE:
     ./scanner [filename w/o file extension]     takes filename and appends .input1
 
 FIXES:
-    none
+    parses vars():
+	need to fix stats():
 

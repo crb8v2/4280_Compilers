@@ -8,6 +8,7 @@
 #include "token.h"
 
 extern token finalTokenSet[];
+extern int fileSize;
 
 void toScanner(string);
 void prefilter(string);

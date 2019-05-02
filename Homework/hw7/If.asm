@@ -1,0 +1,11 @@
+READ x
+LOAD x
+SUB 5
+BRNEG Out
+LOAD x
+SUB 10
+BRPOS Out
+LOAD x
+WRITE 1
+Out: STOP
+x 0

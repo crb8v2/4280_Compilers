@@ -5,7 +5,6 @@
 #include "scanner.h"
 #include "token.h"
 #include "parser.h"
-#include "printTree.h"
 
 #include <stdio.h>
 
@@ -79,9 +78,17 @@ int main(int argc, char *argv[]) {
 
     prefilter("raw.input1");        // removes comments and get line number
     toScanner("toScanner.txt");   // parses file char by char
-//    printTokens();
-    node *parseTree = parser();
-    printTree(parseTree,0);
+    printTokens();
+
+    parser();
+
+
+//    int ii;
+//    for(ii = 0; ii < 256; ii++){
+//        if(finalTokenSet[ii].tokenID != ""){
+//            cout << setw(10) << finalTokenSet[ii].tokenID << "  ";
+//        }
+//    }
 
     return 0;
 }

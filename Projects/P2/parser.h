@@ -7,10 +7,15 @@
 
 #include "node.h"
 
-node* createNode(string);
-node* parser();
-node* program();
-node* vars();
-node* block();
+void parser();
+void program();
+void vars();
+void block();
+void stats();
+void stat();
+void mstats();
+void out();
+void expr();
+void error(string);
 
 #endif //P1_PARSER_H
