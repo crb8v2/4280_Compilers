@@ -22,7 +22,6 @@ void parser() {
     return;
 }
 
-//<program>  ->     PROGRAM <var> <block>
 void program() {
 
     vars();
@@ -36,7 +35,6 @@ void program() {
 
     return;
 }
-
 
 void vars() {
 
@@ -64,7 +62,6 @@ void vars() {
     return;
 }
 
-
 void block() {
 
     if (finalTokenSet[posInFTS].tokenID == "BeginTK") {
@@ -85,7 +82,6 @@ void block() {
     return;
 }
 
-
 void stats(){
 
     stat();
@@ -102,7 +98,6 @@ void stats(){
     return;
 }
 
-
 void stat(){
 
     if(finalTokenSet[posInFTS].tokenID == "ReadTK"){
@@ -112,19 +107,38 @@ void stat(){
     } else if(finalTokenSet[posInFTS].tokenID == "BeginTK"){ //doesnt work
         block();
     } else if(finalTokenSet[posInFTS].tokenID == "IFFTK"){
-
+        iff();
+    } else if(finalTokenSet[posInFTS].tokenID == "LoopTk"){
+        loop();
+    } else if(finalTokenSet[posInFTS].tokenID == "IDTK")
+        assign();
+    else{
+        error(" in 'stats'");
     }
-
 
     return;
 }
-
 
 void mstats(){
 
+    if(finalTokenSet[posInFTS].tokenID == "EndTk"){
+        return;
+    }
+
+    if(finalTokenSet[posInFTS].tokenID == "IDTK"){
+        stat();
+        if(finalTokenSet[posInFTS].tokenID == "SYMTK:") {
+            posInFTS += 1;
+            tk = finalTokenSet[posInFTS];
+        } else {
+            error("SYMTK:");
+        }
+        mstats();
+
+    }
+
     return;
 }
-
 
 void in(){
 
@@ -149,7 +163,6 @@ void in(){
     return;
 }
 
-
 void out(){
     if(finalTokenSet[posInFTS].tokenID == "OutputTK"){
         posInFTS += 1;
@@ -172,18 +185,38 @@ void out(){
     return;
 }
 
+void iff(){
+
+    if(finalTokenSet[posInFTS].tokenID == "IFFTK"){
+        posInFTS += 1;
+        tk = finalTokenSet[posInFTS];
+        if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
+            posInFTS += 1;
+            tk = finalTokenSet[posInFTS];
+            expr();
+            ro();
+            expr();
+            if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+                posInFTS += 1;
+                tk = finalTokenSet[posInFTS];
+                stat();
+            } else
+                error("SYMTK]");
+        } else
+            error("SYMTK[");
+    } else
+        error("IFFTK");
+
+    return;
+}
 
 void expr(){
-
-//    posInFTS += 1;
-//    tk = finalTokenSet[posInFTS];
 
     a();
     z();
 
     return;
 }
-
 
 void a(){
 
@@ -248,7 +281,6 @@ void r(){
     return;
 }
 
-
 void z(){
 
     if(finalTokenSet[posInFTS].tokenID == "SYMTK-" ||
@@ -261,6 +293,42 @@ void z(){
     return;
 }
 
+void ro(){
+
+    if(finalTokenSet[posInFTS].tokenID == "SYMTK<" ||
+            finalTokenSet[posInFTS].tokenID == "SYMTK>"){
+
+        posInFTS += 1;
+        tk = finalTokenSet[posInFTS];
+
+    }else if (finalTokenSet[posInFTS].tokenID == "SYMTK="){
+
+        posInFTS += 1;
+        tk = finalTokenSet[posInFTS];
+
+        if(finalTokenSet[posInFTS].tokenID == "SYMTK=" ||
+                finalTokenSet[posInFTS].tokenID == "SYMTK<" ||
+                finalTokenSet[posInFTS].tokenID == "SYMTK>"){
+
+            posInFTS += 1;
+            tk = finalTokenSet[posInFTS];
+        }
+    } else{
+        error("Relational Operator");
+    }
+
+    return;
+}
+
+void loop(){
+
+    return;
+}
+
+void assign(){
+
+    return;
+}
 
 void error(string bean){
 
@@ -272,5 +340,5 @@ void error(string bean){
 
 
 
-//                 printf("here: %s\n", finalTokenSet[posInFTS].tokenID.c_str());
+//  printf("here: %s\n", finalTokenSet[posInFTS].tokenID.c_str());
 

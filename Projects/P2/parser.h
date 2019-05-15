@@ -16,12 +16,16 @@ void stat();
 void mstats();
 void in();
 void out();
+void iff();
 void expr();
 void a();
 void n();
 void m();
 void r();
 void z();
+void ro();
+void loop();
+void assign();
 void error(string);
 
 #endif //P1_PARSER_H
