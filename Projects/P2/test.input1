@@ -1,5 +1,8 @@
-INT X 1
-INT X1 2
+INT X1 1
+INT X2 2
 Begin
-INT X1 2
+  INT X3 3
+  INT X4 4
+  Read [ 1 + 2 ] :
 End
+

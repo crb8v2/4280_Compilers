@@ -14,8 +14,14 @@ void block();
 void stats();
 void stat();
 void mstats();
+void in();
 void out();
 void expr();
+void a();
+void n();
+void m();
+void r();
+void z();
 void error(string);
 
 #endif //P1_PARSER_H

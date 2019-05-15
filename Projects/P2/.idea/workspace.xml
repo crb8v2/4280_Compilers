@@ -10,11 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="967ce606-dbb4-45cf-b76d-60b962985389" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../P0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../P0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P0/P0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P0/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P0/tokens.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P0/tree.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -75,125 +70,93 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="2" />
-          <entry key="cpp" value="12" />
-          <entry key="h" value="21" />
-          <entry key="input1" value="6" />
+          <entry key="cpp" value="15" />
+          <entry key="h" value="24" />
+          <entry key="input1" value="13" />
           <entry key="o" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="33" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="ObjectiveC" value="39" />
+          <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="134" />
-          <entry key="cpp" value="2389" />
-          <entry key="h" value="316" />
-          <entry key="input1" value="22" />
+          <entry key="cpp" value="3009" />
+          <entry key="h" value="362" />
+          <entry key="input1" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="2705" />
-          <entry key="PLAIN_TEXT" value="156" />
+          <entry key="ObjectiveC" value="3371" />
+          <entry key="PLAIN_TEXT" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.38" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.80172414">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scanner.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="229">
-                  <caret line="188" column="37" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#41#61#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test.input1">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/parser.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-end-line="77" />
-                  <folding>
-                    <element signature="e#205#434#0" />
-                    <element signature="e#654#820#0" />
-                    <element signature="e#566#933#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test2.input1">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="7" selection-start-column="7" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/parser.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scanner.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="235" column="71" selection-start-line="235" selection-start-column="71" selection-end-line="235" selection-end-column="71" />
-                  <folding>
-                    <element signature="e#41#61#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parser.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="177" selection-start-line="177" selection-start-column="2" selection-end-line="178" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parser.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P1_test1.input1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.input1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>cout</find>
       <find>begin</find>
-      <find>symbolSe</find>
       <find>SYMTK</find>
+      <find>EOF</find>
+      <find>symbolSe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,12 +169,10 @@
         <option value="$PROJECT_DIR$/postfilter.h" />
         <option value="$PROJECT_DIR$/postfilter.cpp" />
         <option value="$PROJECT_DIR$/P1_test2.input1" />
-        <option value="$PROJECT_DIR$/P1_test3.input1" />
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/prefilter.cpp" />
         <option value="$PROJECT_DIR$/testScanner.h" />
         <option value="$PROJECT_DIR$/testScanner.cpp" />
-        <option value="$PROJECT_DIR$/P1_test1.input1" />
         <option value="$PROJECT_DIR$/buildTree.cpp" />
         <option value="$PROJECT_DIR$/token.h" />
         <option value="$PROJECT_DIR$/node.h" />
@@ -220,10 +181,12 @@
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/scanner.h" />
-        <option value="$PROJECT_DIR$/test.input1" />
-        <option value="$PROJECT_DIR$/parser.h" />
-        <option value="$PROJECT_DIR$/scanner.cpp" />
         <option value="$PROJECT_DIR$/test2.input1" />
+        <option value="$PROJECT_DIR$/P1_test3.input1" />
+        <option value="$PROJECT_DIR$/scanner.cpp" />
+        <option value="$PROJECT_DIR$/parser.h" />
+        <option value="$PROJECT_DIR$/P1_test1.input1" />
+        <option value="$PROJECT_DIR$/test.input1" />
         <option value="$PROJECT_DIR$/parser.cpp" />
       </list>
     </option>
@@ -235,7 +198,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="992" />
+    <option name="x" value="65" />
     <option name="y" value="24" />
     <option name="width" value="928" />
     <option name="height" value="1056" />
@@ -246,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,7 +226,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,18 +277,21 @@
       <workItem from="1553964946024" duration="26600000" />
       <workItem from="1554055981599" duration="21174000" />
       <workItem from="1556041873299" duration="23357000" />
-      <workItem from="1556831665149" duration="8639000" />
+      <workItem from="1556831665149" duration="9034000" />
+      <workItem from="1557017159565" duration="69000" />
+      <workItem from="1557260078546" duration="121000" />
+      <workItem from="1557427774965" duration="50000" />
+      <workItem from="1557940165176" duration="9741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113092000" />
+    <option name="totallyTimeSpent" value="123468000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="992" y="24" width="928" height="1056" extended-state="4" />
-    <editor active="true" />
+    <frame x="65" y="24" width="928" height="1056" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15873016" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2573696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,10 +303,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3297414" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21659483" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32435346" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.3286638" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.19385026" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -375,13 +341,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prefilter.h" />
     <entry file="file://$PROJECT_DIR$/P1_test2.input1" />
-    <entry file="file://$PROJECT_DIR$/P1_test3.input1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -407,20 +366,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/printTree.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/printTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/printTree.cpp" />
+    <entry file="file://$PROJECT_DIR$/printTree.h" />
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -435,20 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P1_test1.input1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/token.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scanner.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -456,29 +389,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scanner.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="188" column="37" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="37" />
-          <folding>
-            <element signature="e#41#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.input1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/P1_test3.input1">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test2.input1">
       <provider selected="true" editor-type-id="text-editor">
@@ -487,15 +399,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser.cpp">
+    <entry file="file://$PROJECT_DIR$/token.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="188" column="37" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="37" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P1_test1.input1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.input1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-end-line="77" />
-          <folding>
-            <element signature="e#205#434#0" />
-            <element signature="e#654#820#0" />
-            <element signature="e#566#933#0" />
-          </folding>
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="177" selection-start-line="177" selection-start-column="2" selection-end-line="178" selection-end-column="35" />
         </state>
       </provider>
     </entry>
