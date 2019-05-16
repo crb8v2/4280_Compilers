@@ -2,6 +2,8 @@
 // Created by crbaniak on 4/22/19.
 //
 
+// cant do assign, multistatement, and loop
+
 #include "parser.h"
 #include "node.h"
 #include "token.h"
@@ -16,7 +18,6 @@ static int posInFTS = 0;
 
 void parser() {
     tk = finalTokenSet[posInFTS];
-//    posInFTS+=1;
     program();
 
     return;
@@ -56,8 +57,7 @@ void vars() {
                 error("NUMTK");
         } else
             error("IDTK");
-    } else
-        return;
+    }
 
     return;
 }
@@ -76,6 +76,8 @@ void block() {
     if (finalTokenSet[posInFTS].tokenID == "EndTK") {
         posInFTS += 2;
         tk = finalTokenSet[posInFTS];
+        printf("here: %s\n", finalTokenSet[posInFTS].tokenID.c_str());
+
     } else
         error("EndTK");
 
@@ -91,7 +93,7 @@ void stats(){
         tk = finalTokenSet[posInFTS];
 
     } else
-        error("SYMTK:");
+        error("SYMTK::");
 
     mstats();
 
@@ -113,7 +115,7 @@ void stat(){
     } else if(finalTokenSet[posInFTS].tokenID == "IDTK")
         assign();
     else{
-        error(" in 'stats'");
+        error(" in 'stat'");
     }
 
     return;
@@ -134,7 +136,7 @@ void mstats(){
             error("SYMTK:");
         }
         mstats();
-
+        return;
     }
 
     return;
@@ -274,9 +276,8 @@ void r(){
         posInFTS += 1;
         tk = finalTokenSet[posInFTS];
     } else {
-        error("impressive");
+        error(" in r ");
     }
-
 
     return;
 }
@@ -288,6 +289,7 @@ void z(){
         posInFTS += 1;
         tk = finalTokenSet[posInFTS];
         expr();
+        return;
     }
 
     return;
@@ -300,6 +302,7 @@ void ro(){
 
         posInFTS += 1;
         tk = finalTokenSet[posInFTS];
+        return;
 
     }else if (finalTokenSet[posInFTS].tokenID == "SYMTK="){
 
@@ -312,6 +315,7 @@ void ro(){
 
             posInFTS += 1;
             tk = finalTokenSet[posInFTS];
+            return;
         }
     } else{
         error("Relational Operator");
@@ -322,10 +326,43 @@ void ro(){
 
 void loop(){
 
+    if(finalTokenSet[posInFTS].tokenID == "LoopTK"){
+        posInFTS += 1;
+        tk = finalTokenSet[posInFTS];
+        if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
+            posInFTS += 1;
+            tk = finalTokenSet[posInFTS];
+            expr();
+            ro();
+            expr();
+            if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+                posInFTS += 1;
+                tk = finalTokenSet[posInFTS];
+                stat();
+            } else
+                error("SYMTK]");
+        } else
+            error("SYMTK[");
+    } else
+        error("LoopTK");
+
     return;
 }
 
 void assign(){
+
+    if(finalTokenSet[posInFTS].tokenID == "IDTK"){
+        posInFTS += 1;
+        tk = finalTokenSet[posInFTS];
+
+        if(finalTokenSet[posInFTS].tokenID == "SYMTK="){
+            posInFTS += 1;
+            tk = finalTokenSet[posInFTS];
+            expr;
+        } else
+            error("SYMTK=");
+    } else
+        error("IDTK (in assign)");
 
     return;
 }
@@ -333,12 +370,10 @@ void assign(){
 void error(string bean){
 
     cout << "ERROR in Line: " << finalTokenSet[posInFTS+1].linecount + 1 << " -- Recieved: "
-    << finalTokenSet[posInFTS].tokenID << " -- Expected: " << bean << endl;
+    << bean << " -- Expected: " << finalTokenSet[posInFTS].tokenID << endl;
 
     exit(0);
 }
-
-
 
 //  printf("here: %s\n", finalTokenSet[posInFTS].tokenID.c_str());
 

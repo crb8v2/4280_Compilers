@@ -9,7 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="967ce606-dbb4-45cf-b76d-60b962985389" name="Default Changelist" comment="" />
+    <list default="true" id="967ce606-dbb4-45cf-b76d-60b962985389" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,27 +85,28 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="134" />
-          <entry key="cpp" value="3714" />
+          <entry key="cpp" value="4116" />
           <entry key="h" value="416" />
-          <entry key="input1" value="104" />
+          <entry key="input1" value="124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="4130" />
-          <entry key="PLAIN_TEXT" value="238" />
+          <entry key="ObjectiveC" value="4532" />
+          <entry key="PLAIN_TEXT" value="258" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -113,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scanner.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
+            <state relative-caret-position="1232">
               <caret line="188" column="37" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="37" />
               <folding>
                 <element signature="e#41#61#0" expanded="true" />
@@ -125,19 +128,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1372">
-              <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+            <state relative-caret-position="-340">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
               <folding>
                 <element signature="e#217#315#0" />
-                <element signature="e#2007#2566#0" />
-                <element signature="e#1916#2508#0" />
-                <element signature="e#2510#2537#0" />
-                <element signature="e#3475#3560#0" />
-                <element signature="e#3365#3389#0" />
-                <element signature="e#3815#4371#0" />
-                <element signature="e#4374#4486#0" />
-                <element signature="e#2539#2751#0" />
-                <marker date="1557959988937" expanded="true" signature="2224:2574" ph="..." />
+                <element signature="e#317#520#0" />
+                <element signature="e#522#1097#0" />
+                <element signature="e#1099#1460#0" />
+                <element signature="e#2209#2589#0" />
+                <element signature="e#2591#3150#0" />
+                <element signature="e#3152#3713#0" />
+                <element signature="e#3715#4332#0" />
+                <element signature="e#4334#4380#0" />
+                <element signature="e#4382#4550#0" />
+                <element signature="e#4552#4720#0" />
+                <element signature="e#4722#4906#0" />
+                <element signature="e#4908#5464#0" />
+                <element signature="e#5466#5682#0" />
+                <element signature="e#6389#6599#0" />
+                <marker date="1557974846983" expanded="true" signature="2301:2666" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/P1_test1.input1">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="102">
+              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -164,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.input1">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="102">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -182,6 +191,8 @@
       <find>iff</find>
       <find>:</find>
       <find>EndTk</find>
+      <find>EndTK</find>
+      <find>SYMTK:</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,9 +221,9 @@
         <option value="$PROJECT_DIR$/P1_test3.input1" />
         <option value="$PROJECT_DIR$/scanner.cpp" />
         <option value="$PROJECT_DIR$/parser.h" />
-        <option value="$PROJECT_DIR$/parser.cpp" />
         <option value="$PROJECT_DIR$/test.input1" />
         <option value="$PROJECT_DIR$/P1_test1.input1" />
+        <option value="$PROJECT_DIR$/parser.cpp" />
       </list>
     </option>
   </component>
@@ -223,10 +234,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="65" />
+    <option name="x" value="2596" />
     <option name="y" value="24" />
-    <option name="width" value="978" />
-    <option name="height" value="1056" />
+    <option name="width" value="924" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -234,7 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,6 +261,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,17 +317,18 @@
       <workItem from="1557017159565" duration="69000" />
       <workItem from="1557260078546" duration="121000" />
       <workItem from="1557427774965" duration="50000" />
-      <workItem from="1557940165176" duration="17537000" />
+      <workItem from="1557940165176" duration="18174000" />
+      <workItem from="1557968684513" duration="4536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131264000" />
+    <option name="totallyTimeSpent" value="136437000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="978" height="1056" extended-state="4" />
+    <frame x="2596" y="24" width="924" height="876" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24356224" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18906605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +340,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22090517" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37967914" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.19385026" />
@@ -359,12 +371,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/parser.cpp</url>
-          <line>259</line>
+          <line>261</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/parser.cpp</url>
-          <line>165</line>
+          <line>167</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -424,22 +436,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P1_test3.input1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.input1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/P1_test3.input1" />
+    <entry file="file://$PROJECT_DIR$/test2.input1" />
     <entry file="file://$PROJECT_DIR$/token.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanner.o">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/parser.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -448,12 +455,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanner.o">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scanner.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
+        <state relative-caret-position="1232">
           <caret line="188" column="37" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="37" />
           <folding>
             <element signature="e#41#61#0" expanded="true" />
@@ -463,34 +467,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1372">
-          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+        <state relative-caret-position="-340">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding>
             <element signature="e#217#315#0" />
-            <element signature="e#2007#2566#0" />
-            <element signature="e#1916#2508#0" />
-            <element signature="e#2510#2537#0" />
-            <element signature="e#3475#3560#0" />
-            <element signature="e#3365#3389#0" />
-            <element signature="e#3815#4371#0" />
-            <element signature="e#4374#4486#0" />
-            <element signature="e#2539#2751#0" />
-            <marker date="1557959988937" expanded="true" signature="2224:2574" ph="..." />
+            <element signature="e#317#520#0" />
+            <element signature="e#522#1097#0" />
+            <element signature="e#1099#1460#0" />
+            <element signature="e#2209#2589#0" />
+            <element signature="e#2591#3150#0" />
+            <element signature="e#3152#3713#0" />
+            <element signature="e#3715#4332#0" />
+            <element signature="e#4334#4380#0" />
+            <element signature="e#4382#4550#0" />
+            <element signature="e#4552#4720#0" />
+            <element signature="e#4722#4906#0" />
+            <element signature="e#4908#5464#0" />
+            <element signature="e#5466#5682#0" />
+            <element signature="e#6389#6599#0" />
+            <marker date="1557974846983" expanded="true" signature="2301:2666" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.input1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/P1_test1.input1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
