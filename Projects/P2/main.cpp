@@ -5,6 +5,8 @@
 #include "scanner.h"
 #include "token.h"
 #include "parser.h"
+#include "printTree.h"
+#include "node.h"
 
 #include <stdio.h>
 
@@ -78,9 +80,12 @@ int main(int argc, char *argv[]) {
 
     prefilter("raw.input1");        // removes comments and get line number
     toScanner("toScanner.txt");   // parses file char by char
+
     printTokens();
 
-    parser();
+    node* root = parser();
+
+    printTree(root, 0);
 
 
 //    int ii;
