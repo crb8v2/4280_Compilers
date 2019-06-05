@@ -1,0 +1,8 @@
+INT X1 1
+INT X2 2
+Begin
+  INT X3 3
+  INT X4 4
+  IFF [ X4 = < X2 ]
+    Output [ X4 ] :
+End
