@@ -24,8 +24,6 @@ void printTree(node *node, int level) {
         line.append(node->literal);
         line.append(" ");
 
-
-
         cout << line << "\n";
 
         //Print the children of the node, where the children go from

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/P4.dir/main.cpp.o CMakeFiles/P4.dir/parser.cpp.o CMakeFiles/P4.dir/printTree.cpp.o CMakeFiles/P4.dir/scanner.cpp.o CMakeFiles/P4.dir/semantics.cpp.o CMakeFiles/P4.dir/statSem.cpp.o  -o P4 

@@ -48,24 +48,13 @@ RM = /home/crbaniak/Programs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1
+CMAKE_SOURCE_DIR = /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/crbaniak/Programs/clion-2018.2.2/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/crbaniak/Programs/clion-2018.2.2/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/cmake-build-debug/CMakeFiles /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/cmake-build-debug/CMakeFiles /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named P1
+# Target rules for targets named P4
 
 # Build rule for target.
-P1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 P1
-.PHONY : P1
+P4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 P4
+.PHONY : P4
 
 # fast build rule for target.
-P1/fast:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/build
-.PHONY : P1/fast
+P4/fast:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/build
+.PHONY : P4/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,62 +147,62 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-postfilter.o: postfilter.cpp.o
+parser.o: parser.cpp.o
 
-.PHONY : postfilter.o
-
-# target to build an object file
-postfilter.cpp.o:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/postfilter.cpp.o
-.PHONY : postfilter.cpp.o
-
-postfilter.i: postfilter.cpp.i
-
-.PHONY : postfilter.i
-
-# target to preprocess a source file
-postfilter.cpp.i:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/postfilter.cpp.i
-.PHONY : postfilter.cpp.i
-
-postfilter.s: postfilter.cpp.s
-
-.PHONY : postfilter.s
-
-# target to generate assembly for a file
-postfilter.cpp.s:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/postfilter.cpp.s
-.PHONY : postfilter.cpp.s
-
-prefilter.o: prefilter.cpp.o
-
-.PHONY : prefilter.o
+.PHONY : parser.o
 
 # target to build an object file
-prefilter.cpp.o:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/prefilter.cpp.o
-.PHONY : prefilter.cpp.o
+parser.cpp.o:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/parser.cpp.o
+.PHONY : parser.cpp.o
 
-prefilter.i: prefilter.cpp.i
+parser.i: parser.cpp.i
 
-.PHONY : prefilter.i
+.PHONY : parser.i
 
 # target to preprocess a source file
-prefilter.cpp.i:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/prefilter.cpp.i
-.PHONY : prefilter.cpp.i
+parser.cpp.i:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/parser.cpp.i
+.PHONY : parser.cpp.i
 
-prefilter.s: prefilter.cpp.s
+parser.s: parser.cpp.s
 
-.PHONY : prefilter.s
+.PHONY : parser.s
 
 # target to generate assembly for a file
-prefilter.cpp.s:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/prefilter.cpp.s
-.PHONY : prefilter.cpp.s
+parser.cpp.s:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/parser.cpp.s
+.PHONY : parser.cpp.s
+
+printTree.o: printTree.cpp.o
+
+.PHONY : printTree.o
+
+# target to build an object file
+printTree.cpp.o:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/printTree.cpp.o
+.PHONY : printTree.cpp.o
+
+printTree.i: printTree.cpp.i
+
+.PHONY : printTree.i
+
+# target to preprocess a source file
+printTree.cpp.i:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/printTree.cpp.i
+.PHONY : printTree.cpp.i
+
+printTree.s: printTree.cpp.s
+
+.PHONY : printTree.s
+
+# target to generate assembly for a file
+printTree.cpp.s:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/printTree.cpp.s
+.PHONY : printTree.cpp.s
 
 scanner.o: scanner.cpp.o
 
@@ -210,7 +210,7 @@ scanner.o: scanner.cpp.o
 
 # target to build an object file
 scanner.cpp.o:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/scanner.cpp.o
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/scanner.cpp.o
 .PHONY : scanner.cpp.o
 
 scanner.i: scanner.cpp.i
@@ -219,7 +219,7 @@ scanner.i: scanner.cpp.i
 
 # target to preprocess a source file
 scanner.cpp.i:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/scanner.cpp.i
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/scanner.cpp.i
 .PHONY : scanner.cpp.i
 
 scanner.s: scanner.cpp.s
@@ -228,35 +228,62 @@ scanner.s: scanner.cpp.s
 
 # target to generate assembly for a file
 scanner.cpp.s:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/scanner.cpp.s
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/scanner.cpp.s
 .PHONY : scanner.cpp.s
 
-testScanner.o: testScanner.cpp.o
+semantics.o: semantics.cpp.o
 
-.PHONY : testScanner.o
+.PHONY : semantics.o
 
 # target to build an object file
-testScanner.cpp.o:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/testScanner.cpp.o
-.PHONY : testScanner.cpp.o
+semantics.cpp.o:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/semantics.cpp.o
+.PHONY : semantics.cpp.o
 
-testScanner.i: testScanner.cpp.i
+semantics.i: semantics.cpp.i
 
-.PHONY : testScanner.i
+.PHONY : semantics.i
 
 # target to preprocess a source file
-testScanner.cpp.i:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/testScanner.cpp.i
-.PHONY : testScanner.cpp.i
+semantics.cpp.i:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/semantics.cpp.i
+.PHONY : semantics.cpp.i
 
-testScanner.s: testScanner.cpp.s
+semantics.s: semantics.cpp.s
 
-.PHONY : testScanner.s
+.PHONY : semantics.s
 
 # target to generate assembly for a file
-testScanner.cpp.s:
-	$(MAKE) -f CMakeFiles/P1.dir/build.make CMakeFiles/P1.dir/testScanner.cpp.s
-.PHONY : testScanner.cpp.s
+semantics.cpp.s:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/semantics.cpp.s
+.PHONY : semantics.cpp.s
+
+statSem.o: statSem.cpp.o
+
+.PHONY : statSem.o
+
+# target to build an object file
+statSem.cpp.o:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/statSem.cpp.o
+.PHONY : statSem.cpp.o
+
+statSem.i: statSem.cpp.i
+
+.PHONY : statSem.i
+
+# target to preprocess a source file
+statSem.cpp.i:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/statSem.cpp.i
+.PHONY : statSem.cpp.i
+
+statSem.s: statSem.cpp.s
+
+.PHONY : statSem.s
+
+# target to generate assembly for a file
+statSem.cpp.s:
+	$(MAKE) -f CMakeFiles/P4.dir/build.make CMakeFiles/P4.dir/statSem.cpp.s
+.PHONY : statSem.cpp.s
 
 # Help Target
 help:
@@ -264,24 +291,27 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... P1"
+	@echo "... rebuild_cache"
+	@echo "... P4"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... postfilter.o"
-	@echo "... postfilter.i"
-	@echo "... postfilter.s"
-	@echo "... prefilter.o"
-	@echo "... prefilter.i"
-	@echo "... prefilter.s"
+	@echo "... parser.o"
+	@echo "... parser.i"
+	@echo "... parser.s"
+	@echo "... printTree.o"
+	@echo "... printTree.i"
+	@echo "... printTree.s"
 	@echo "... scanner.o"
 	@echo "... scanner.i"
 	@echo "... scanner.s"
-	@echo "... testScanner.o"
-	@echo "... testScanner.i"
-	@echo "... testScanner.s"
+	@echo "... semantics.o"
+	@echo "... semantics.i"
+	@echo "... semantics.s"
+	@echo "... statSem.o"
+	@echo "... statSem.i"
+	@echo "... statSem.s"
 .PHONY : help
 
 

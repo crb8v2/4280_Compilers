@@ -144,7 +144,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=P1
+CMAKE_PROJECT_NAME:STATIC=P4
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -210,6 +210,12 @@ P1_BINARY_DIR:STATIC=/home/crbaniak/Documents/umslClasses/19spring/4280compilers
 
 //Value Computed by CMake
 P1_SOURCE_DIR:STATIC=/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4
+
+//Value Computed by CMake
+P4_BINARY_DIR:STATIC=/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/cmake-build-debug
+
+//Value Computed by CMake
+P4_SOURCE_DIR:STATIC=/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4
 
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf

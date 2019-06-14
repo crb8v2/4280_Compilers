@@ -9,6 +9,7 @@
 
 extern token finalTokenSet[];
 extern int fileSize;
+extern int tokenPos;
 
 void toScanner(string);
 void prefilter(string);

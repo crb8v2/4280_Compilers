@@ -227,20 +227,20 @@ int makeID(char c1, char c2, int state, int linecount){
 
 // prints final token format: token, literal, line number
 void printTokens(){
-    int ii = 0;
-    int finalLine = 0;
-    cout << endl << endl;
-    for(ii = 0; ii < tokenPos; ii++){
-        cout << setw(10) << finalTokenSet[ii].tokenID << "  ";
-        cout << setw(10) << finalTokenSet[ii].tokenLiteral << "  ";
-        cout << setw(10) << "Line: " << finalTokenSet[ii].linecount + 1 << endl;
-        finalLine = finalTokenSet[ii].linecount;
-
-    }
-
-    fileSize = ii+1;
-    finalTokenSet[fileSize].tokenID = "EOFtk";
-    finalTokenSet[fileSize].linecount = finalLine + 1;
-
-    cout << "     " << finalTokenSet[fileSize].tokenID <<  endl;
+//    int ii = 0;
+//    int finalLine = 0;
+//    cout << endl << endl;
+//    for(ii = 0; ii < tokenPos; ii++){
+//        cout << setw(10) << finalTokenSet[ii].tokenID << "  ";
+//        cout << setw(10) << finalTokenSet[ii].tokenLiteral << "  ";
+//        cout << setw(10) << "Line: " << finalTokenSet[ii].linecount + 1 << endl;
+//        finalLine = finalTokenSet[ii].linecount;
+//
+//    }
+//
+//    fileSize = ii+1;
+//    finalTokenSet[fileSize].tokenID = "EOFtk";
+//    finalTokenSet[fileSize].linecount = finalLine + 1;
+//
+//    cout << "     " << finalTokenSet[fileSize].tokenID <<  endl;
 }

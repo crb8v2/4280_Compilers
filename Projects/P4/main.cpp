@@ -8,8 +8,10 @@
 #include "printTree.h"
 #include "node.h"
 #include "statSem.h"
+#include "semantics.h"
 
 #include <stdio.h>
+
 
 //creates a raw file of the user input / pipe
 void createRawFile(string filename){
@@ -82,21 +84,19 @@ int main(int argc, char *argv[]) {
     prefilter("raw.input1");        // removes comments and get line number
     toScanner("toScanner.txt");   // parses file char by char
 
-//    printTokens();
+    printTokens();
 
-//    node* root = parser();
-//
+    node* root = parser();
+
 //    printTree(root, 0);
 
-    statSem();
+//    statSem();
 
+    prePrint();
 
-//    int ii;
-//    for(ii = 0; ii < 256; ii++){
-//        if(finalTokenSet[ii].tokenID != ""){
-//            cout << setw(10) << finalTokenSet[ii].tokenID << "  ";
-//        }
-//    }
+    cout << program(root) << endl;
+
+    gatherVars();
 
     return 0;
 }

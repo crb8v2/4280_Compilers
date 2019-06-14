@@ -16,7 +16,6 @@
 
 static int posInFTS = 0;
 
-
 node* parser() {
     node* root;
 
@@ -35,7 +34,7 @@ node* program() {
     if(finalTokenSet[fileSize].tokenID == "EOFtk"){
         cout << "Parse OK\n";
     } else {
-        cout << "Parse failed : error out";
+//        cout << "Parse failed : error out";
     }
 
     return tree;
@@ -49,8 +48,7 @@ node* vars() {
     if(finalTokenSet[posInFTS].tokenID == "INTTK") {
         posInFTS += 1;
         if(finalTokenSet[posInFTS].tokenID == "IDTK"){
-            // put info in node
-            posInFTS += 1;
+           posInFTS += 1;
 
             if(finalTokenSet[posInFTS].tokenID == "NUMTK"){
                 posInFTS += 1;
@@ -268,12 +266,19 @@ node* assign(){
 
 node* expr(){
 
-    node *tree = create_node("<expr>");
+//    if(finalTokenSet[posInFTS].tokenID == "<expr>") {
 
-    tree->child0 = a();
-    tree->child1 = z();
+        node *tree = create_node("<expr>");
 
-    return tree;
+        tree->child0 = a();
+        tree->child1 = z();
+
+        return tree;
+
+//    } else {
+//        node *tree = create_node("<expr>");
+//        return tree;
+//    }
 }
 
 node* a(){

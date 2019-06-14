@@ -1,0 +1,6 @@
+LOAD 0
+PUSH
+WRITE X1
+X1 0
+X2 0
+X4 0

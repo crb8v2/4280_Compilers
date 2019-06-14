@@ -3,12 +3,10 @@
 ### 4280 - P2
 #################
 
-This project parses the test file for syntax and then builds a tree.
+***This project is using global variables***
 
 GITHUB:
-    https://github.com/crb8v2/4280_Compilers/tree/master/Projects/P2
-
-SUMMARY:
+    https://github.com/crb8v2/4280_Compilers/tree/master/Projects
 
 
 INPUT:
@@ -22,11 +20,6 @@ INPUT:
     Output, Program, IFF, Then, Let
 
 USAGE:
-    ./scanner                                   allows user input
-    ./scanner < [filename]                      pipes input from file
-    ./scanner [filename w/o file extension]     takes filename and appends .input1
+    ./comp filename
 
-FIXES:
-    parses vars():
-	need to fix stats():
 
