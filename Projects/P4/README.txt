@@ -1,6 +1,6 @@
 #################
 ### Connor Baniak
-### 4280 - P2
+### 4280 - P4
 #################
 
 ***This project is using global variables***
