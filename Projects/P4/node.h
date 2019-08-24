@@ -13,8 +13,13 @@
 typedef struct node {
 
     node *child0, *child1, *child2, *child3;
-    token token_t;
+    token token_t; //ro require two tokens*****
+    token token2;
+
+    string id;
     string literal;
+    string value;
+
     int level;
 
     vector<token> allTokens;

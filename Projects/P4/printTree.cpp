@@ -11,17 +11,20 @@ void printTree(node *node, int level) {
         if (node == NULL)
             return;
 
-        //The output line
         string line;
 
-        //Add two spaces for each level of the node.
+        //two spaces for each level
         for (int counter = 0; counter < level; counter++) {
             line.append("  ");
         }
 
-        //Append the node's label to the line to provide what production
-        //the node represents.
+        line.append(node->id);
+        line.append(" ");
         line.append(node->literal);
+        line.append(" ");
+        line.append(node->value);
+
+        //if vars or r, print
         line.append(" ");
 
         cout << line << "\n";

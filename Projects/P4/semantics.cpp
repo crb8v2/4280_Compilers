@@ -34,6 +34,8 @@ string vars(node* parent){
 
 string block(node* parent) {
 
+    //check begin
+
     if (parent->child0 != NULL) {
         return stats(parent->child0);
     } else if (parent->child1 != NULL){
@@ -55,59 +57,59 @@ string stats(node* parent){
 
 string stat(node* parent){
 
-    if( parent->child0->literal == "<in>") {
+    if( parent->child0->id == "<in>") {
                 return in(parent->child0);
-        } else if(parent->child0->literal == "<out>"){
+        } else if(parent->child0->id == "<out>"){
                 return out(parent->child0);
-        } else if(parent->child0->literal == "<block>"){
+        } else if(parent->child0->id == "<block>"){
                 return block(parent->child0);
-        } else if(parent->child0->literal == "<IFF>"){
+        } else if(parent->child0->id == "<IFF>"){
                 return iff(parent->child0);
-        } else if(parent->child0->literal == "<loop>"){
+        } else if(parent->child0->id == "<loop>"){
                 return loop(parent->child0);
-        } else if(parent->child0->literal == "<assign>"){
+        } else if(parent->child0->id == "<assign>"){
                 return assign(parent->child0);
         }
 
-        if( parent->child1->literal == "<in>") {
+        if( parent->child1->id == "<in>") {
                 return in(parent->child1);
-        } else if(parent->literal == "<out>"){
+        } else if(parent->id == "<out>"){
                 return out(parent->child1);
-        } else if(parent->child1->literal == "<block>"){
+        } else if(parent->child1->id == "<block>"){
                 return block(parent->child1);
-        } else if(parent->literal == "<IFF>"){
+        } else if(parent->id == "<IFF>"){
                 return iff(parent->child1);
-        } else if(parent->literal == "<loop>"){
+        } else if(parent->id == "<loop>"){
                 return loop(parent->child1);
-        } else if(parent->child1->literal == "<assign>"){
+        } else if(parent->child1->id == "<assign>"){
                 return assign(parent->child1);
         }
 
-        if( parent->child2->literal == "<in>") {
+        if( parent->child2->id == "<in>") {
                 return in(parent->child2);
-        } else if(parent->child2->literal == "<out>"){
+        } else if(parent->child2->id == "<out>"){
                 return out(parent->child2);
-        } else if(parent->child2->literal == "<block>"){
+        } else if(parent->child2->id == "<block>"){
                 return block(parent->child2);
-        } else if(parent->child2->literal == "<IFF>"){
+        } else if(parent->child2->id == "<IFF>"){
                 return iff(parent->child2);
-        } else if(parent->child2->literal == "<loop>"){
+        } else if(parent->child2->id == "<loop>"){
                 return loop(parent->child2);
-        } else if(parent->child2->literal == "<assign>"){
+        } else if(parent->child2->id == "<assign>"){
                 return assign(parent->child2);
         }
 
-        if( parent->child3->literal == "<in>") {
+        if( parent->child3->id == "<in>") {
             return in(parent->child3);
-        } else if(parent->child3->literal == "<out>"){
+        } else if(parent->child3->id == "<out>"){
             return out(parent->child3);
-        } else if(parent->child3->literal == "<block>"){
+        } else if(parent->child3->id == "<block>"){
             return block(parent->child3);
-        } else if(parent->child3->literal == "<IFF>"){
+        } else if(parent->child3->id == "<IFF>"){
             return iff(parent->child3);
-        } else if(parent->child3->literal == "<loop>"){
+        } else if(parent->child3->id == "<loop>"){
             return loop(parent->child3);
-        } else if(parent->child3->literal == "<assign>"){
+        } else if(parent->child3->id == "<assign>"){
             return assign(parent->child3);
         }
 
@@ -119,17 +121,18 @@ string mstats(node* parent){
 
 string in(node* parent){
 
-    printToFile("READ X1");
+    printToFile("READ T");
 
         return "";
 }
 
 string out(node* parent){
 
-    printToFile("WRITE X1");
+    printToFile("WRITE T");
 
         return "";
 }
+
 
 string iff(node* parent){
         return "";
@@ -176,25 +179,49 @@ void prePrint(){
     printToFile("LOAD 0");
     printToFile("PUSH");
 
-//    cout << "LOAD 0" << endl;
-//    cout << "PUSH" << endl;
+    cout << "LOAD 0" << endl;
+    cout << "PUSH" << endl;
 }
 
 void gatherVars() {
 
     int varCount = 0;
 
+    static int arrPos = 0;
+
+    string arrayOfVars[30];
+
+    printToFile("T 0");
+
     for (int ii = 0; ii < tokenPos; ii++) {
 
         static int count = 0;
 
         if (finalTokenSet[ii].tokenID == "IDTK") {
-//            cout << finalTokenSet[ii].tokenLiteral << " " << count << endl;
+
+//            arrayOfVars[arrPos] = finalTokenSet[ii].tokenLiteral;
+//            arrPos++;
             printToFile(finalTokenSet[ii].tokenLiteral + " 0");
+
             varCount++;
             count++;
         }
     }
+
+//    for(int jj = 0; jj < 30; jj++) {
+//        for (int kk = 0; kk < 30; kk++){
+//            if (arrayOfVars[jj] == arrayOfVars[kk]) {
+//                arrayOfVars[jj] = "";
+//            }
+//        }
+//    }
+//
+//    for(int ll = 0; ll < 30; ll++){
+//        if(arrayOfVars[ll] != ""){
+//            printToFile(finalTokenSet[ll].tokenLiteral + " 0");
+//
+//        }
+//    }
 
     cout << "Done - check test.asm file for output" << endl;
 
@@ -204,10 +231,30 @@ void gatherVars() {
 
 void printToFile(string theThing){
 
-//    myfile.open ("test.asm");
-    myfile.open("test.asm", std::ios::app);
-    myfile << theThing + "\n";
-    myfile.close();
+    string arrOfVars[30];
+    static int pos = 0;
+
+//    arrOfVars[pos] = theThing;
+//    cout << arrOfVars[pos] << endl;
+//    pos++;
+
+//    for(int jj = 0; jj < 30; jj++) {
+//        for (int kk = 0; kk < 30; kk++){
+//            if (arrOfVars[jj] == arrOfVars[kk] && arrOfVars[jj] != "") {
+//                arrOfVars[kk] = "0";
+//                break;
+//            }
+//        }
+//    }
+
+//    for(int ii = 0; ii < 30; ii++) {
+//        if(arrOfVars[ii] != "" || arrOfVars[ii] != "0") {
+
+            myfile.open("test.asm", std::ios::app);
+            myfile << theThing +"\n";
+            myfile.close();
+//        }
+//    }
     return;
 }
 

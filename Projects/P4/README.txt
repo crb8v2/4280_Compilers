@@ -3,6 +3,10 @@
 ### 4280 - P4
 #################
 
+todo:
+prints all the way to R
+assembly IFF, LOOP,
+
 ***This project is using global variables***
 
 GITHUB:

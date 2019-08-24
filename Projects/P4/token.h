@@ -15,12 +15,13 @@
 #include <iomanip>
 
 using namespace std;
-
+//typedef
 struct token {
     string tokenID;
     string tokenLiteral;
+
     int linecount;
 };
-
+//token_t ^^^
 
 #endif //P1_TOKEN_H

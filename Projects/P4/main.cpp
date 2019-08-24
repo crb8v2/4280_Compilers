@@ -88,15 +88,15 @@ int main(int argc, char *argv[]) {
 
     node* root = parser();
 
-//    printTree(root, 0);
+    printTree(root, 0);
 
-//    statSem();
+    statSem();
 
     prePrint();
 
     cout << program(root) << endl;
-
-    gatherVars();
+////
+////    gatherVars();
 
     return 0;
 }

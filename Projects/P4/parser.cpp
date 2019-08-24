@@ -14,243 +14,255 @@
 #include <string.h>
 #include <vector>
 
-static int posInFTS = 0;
+        static int posInFTS = 0;
 
-node* parser() {
-    node* root;
+        node* parser() {
+            node* root;
 
-    root = program();
+            root = program();
 
-    return root;
-}
-
-node* program() {
-
-    node *tree = create_node("<program>");
-
-    tree->child0 = vars();
-    tree->child1 = block();
-
-    if(finalTokenSet[fileSize].tokenID == "EOFtk"){
-        cout << "Parse OK\n";
-    } else {
-//        cout << "Parse failed : error out";
-    }
-
-    return tree;
-}
-
-node* vars() {
-
-    node *tree = create_node("<vars>");
-
-
-    if(finalTokenSet[posInFTS].tokenID == "INTTK") {
-        posInFTS += 1;
-        if(finalTokenSet[posInFTS].tokenID == "IDTK"){
-           posInFTS += 1;
-
-            if(finalTokenSet[posInFTS].tokenID == "NUMTK"){
-                posInFTS += 1;
-                tree->child0 = vars();
-                return tree;
-
-            } else
-                error("NUMTK");
-        } else
-            error("IDTK");
-    }
-
-    return NULL;
-}
-
-node* block() {
-
-    node *tree = create_node("<block>");
-
-
-    if (finalTokenSet[posInFTS].tokenID == "BeginTK") {
-        posInFTS += 1;
-    } else
-        error("BeginTK");
-
-    tree->child0 = vars();
-    tree->child1 = stats();
-
-    if (finalTokenSet[posInFTS].tokenID == "EndTK") {
-        posInFTS += 1;
-    } else
-        error("EndTKk");
-
-    return tree;
-}
-
-node* stats(){
-
-    node *tree = create_node("<stats>");
-
-    tree->child0 = stat();
-
-    if(finalTokenSet[posInFTS].tokenID == "SYMTK:"){
-        posInFTS += 1;
-
-    } else
-        error("SYMTK:");
-
-    tree->child1 = mstats();
-
-    return tree;
-}
-
-node* stat(){
-
-    node *tree = create_node("<stat>");
-
-    if(finalTokenSet[posInFTS].tokenID == "ReadTK"){
-        tree->child0 = in();
-    } else if(finalTokenSet[posInFTS].tokenID == "OutputTK"){
-        tree->child0 = out();
-    } else if(finalTokenSet[posInFTS].tokenID == "BeginTK"){
-        tree->child0 = block();
-    } else if(finalTokenSet[posInFTS].tokenID == "LoopTK"){
-        tree->child0 = loop();
-    } else if(finalTokenSet[posInFTS].tokenID == "IFFTK"){
-        tree->child0 = iff();
-    }  else if(finalTokenSet[posInFTS].tokenID == "IDTK")
-        tree->child0 = assign();
-    else{
-        error(finalTokenSet[posInFTS].tokenID);
-    }
-
-    return tree;
-}
-
-node* mstats(){
-
-    node *tree = create_node("<mstats>");
-
-    if(finalTokenSet[posInFTS].tokenID == "EndTK"){
-        return NULL;
-    }
-
-    if(finalTokenSet[posInFTS].tokenID == "IDTK" ||
-            finalTokenSet[posInFTS].tokenID == "ReadTK" ||
-            finalTokenSet[posInFTS].tokenID == "OutputTK" ||
-            finalTokenSet[posInFTS].tokenID == "BeginTK" ||
-            finalTokenSet[posInFTS].tokenID == "LoopTK" ||
-            finalTokenSet[posInFTS].tokenID == "IFFTK"){
-        tree->child0 = stat();
-        if(finalTokenSet[posInFTS].tokenID == "SYMTK:") {
-            posInFTS += 1;
-        } else {
-            error("SYMTK:");
+            return root;
         }
-        tree->child1 = mstats();
-        return tree;
-    }
 
-    return NULL;
-}
+        node* program() {
 
-node* in(){
+            node *tree = create_node("<program>");
 
-    node *tree = create_node("<in>");
+            tree->child0 = vars();
+            tree->child1 = block();
 
-    if(finalTokenSet[posInFTS].tokenID == "ReadTK"){
-        posInFTS += 1;
-        if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
-            posInFTS += 1;
-            tree->child0 = expr();
-            if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+            if(finalTokenSet[fileSize].tokenID == "EOFtk"){
+                cout << "Parse OK\n";
+            } else {
+//        cout << "Parse failed : error out";
+            }
+
+            return tree;
+        }
+
+        node* vars() {
+
+            node *tree = create_node("<vars>");
+
+
+            if(finalTokenSet[posInFTS].tokenID == "INTTK") {
+                posInFTS += 1;
+                if(finalTokenSet[posInFTS].tokenID == "IDTK"){
+
+                    tree->literal = finalTokenSet[posInFTS].tokenLiteral;
+                    tree->allTokens.push_back(finalTokenSet[posInFTS]);
+                    posInFTS += 1;
+
+                    if(finalTokenSet[posInFTS].tokenID == "NUMTK"){
+
+                        tree->value = finalTokenSet[posInFTS].tokenLiteral;
+                        tree->allTokens.push_back(finalTokenSet[posInFTS]);
+                        posInFTS += 1;
+                        tree->child0 = vars();
+                        return tree;
+
+                    } else
+                        error("NUMTK");
+                } else
+                    error("IDTK");
+            }
+
+            return NULL;
+        }
+
+        node* block() {
+
+            node *tree = create_node("<block>");
+
+
+            if (finalTokenSet[posInFTS].tokenID == "BeginTK") {
+                posInFTS += 1;
+            } else
+                error("BeginTK");
+
+            tree->child0 = vars();
+            tree->child1 = stats();
+
+            if (finalTokenSet[posInFTS].tokenID == "EndTK") {
+                posInFTS += 1;
+            } else
+                error("EndTKk");
+
+            return tree;
+        }
+
+        node* stats(){
+
+            node *tree = create_node("<stats>");
+
+            tree->child0 = stat();
+
+            if(finalTokenSet[posInFTS].tokenID == "SYMTK:"){
                 posInFTS += 1;
 
             } else
-                error("SYMTK]");
-        } else
-            error("SYMTK[");
-    } else
-        error("OutputTK");
+                error("SYMTK:");
 
-    return tree;
-}
+            tree->child1 = mstats();
 
-node* out(){
+            return tree;
+        }
 
-    node *tree = create_node("<out>");
+        node* stat(){
 
+            node *tree = create_node("<stat>");
 
-    if(finalTokenSet[posInFTS].tokenID == "OutputTK"){
-        posInFTS += 1;
-        if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
-            posInFTS += 1;
-            tree->child0 = expr();
-            if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+            if(finalTokenSet[posInFTS].tokenID == "ReadTK"){
+                tree->child0 = in();
+            } else if(finalTokenSet[posInFTS].tokenID == "OutputTK"){
+                tree->child0 = out();
+            } else if(finalTokenSet[posInFTS].tokenID == "BeginTK"){
+                tree->child0 = block();
+            } else if(finalTokenSet[posInFTS].tokenID == "LoopTK"){
+                tree->child0 = loop();
+            } else if(finalTokenSet[posInFTS].tokenID == "IFFTK"){
+                tree->child0 = iff();
+            }  else if(finalTokenSet[posInFTS].tokenID == "IDTK")
+                tree->child0 = assign();
+            else{
+                error(finalTokenSet[posInFTS].tokenID);
+            }
+
+            return tree;
+        }
+
+        node* mstats(){
+
+            node *tree = create_node("<mstats>");
+
+            if(finalTokenSet[posInFTS].tokenID == "EndTK"){
+                return NULL;
+            }
+
+            if(finalTokenSet[posInFTS].tokenID == "IDTK" ||
+               finalTokenSet[posInFTS].tokenID == "ReadTK" ||
+               finalTokenSet[posInFTS].tokenID == "OutputTK" ||
+               finalTokenSet[posInFTS].tokenID == "BeginTK" ||
+               finalTokenSet[posInFTS].tokenID == "LoopTK" ||
+               finalTokenSet[posInFTS].tokenID == "IFFTK"){
+                tree->child0 = stat();
+                if(finalTokenSet[posInFTS].tokenID == "SYMTK:") {
+                    posInFTS += 1;
+                } else {
+                    error("SYMTK:");
+                }
+                tree->child1 = mstats();
+                return tree;
+            }
+
+            return NULL;
+        }
+
+        node* in(){
+
+            node *tree = create_node("<in>");
+
+            if(finalTokenSet[posInFTS].tokenID == "ReadTK"){
                 posInFTS += 1;
+                if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
+                    posInFTS ++;
+                    tree->literal = finalTokenSet[posInFTS].tokenLiteral;
+                    posInFTS ++;
 
+//            tree->child0 = expr();
+                    if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+                        posInFTS += 1;
+
+                    } else
+                        error("SYMTK]");
+                } else
+                    error("SYMTK[");
             } else
-                error("SYMTK]");
-        } else
-            error("SYMTK[");
-    } else
-        error("OutputTK");
+                error("OutputTK");
 
-    return tree;
-}
+            return tree;
+        }
 
-node* iff(){
+        node* out(){
 
-    node *tree = create_node("<IFF>");
+            node *tree = create_node("<out>");
 
-    if(finalTokenSet[posInFTS].tokenID == "IFFTK"){
-        posInFTS += 1;
-        if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
-            posInFTS += 1;
-            tree->child0 = expr();
-            tree->child1 = ro();
-            tree->child2 = expr();
-            if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+
+            if(finalTokenSet[posInFTS].tokenID == "OutputTK"){
                 posInFTS += 1;
-                stat();
+                if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
+                    posInFTS++;
+                    tree->literal = finalTokenSet[posInFTS].tokenLiteral;
+                    posInFTS++;
+
+//            tree->child0 = expr();
+                    if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+                        posInFTS += 1;
+
+                    } else
+                        error("SYMTK]");
+                } else
+                    error("SYMTK[");
             } else
-                error("SYMTK]");
-        } else
-            error("SYMTK[");
-    } else
-        error("IFFTK");
+                error("OutputTK");
 
-    return tree;
-}
+            return tree;
+        }
 
-node* loop(){
+        node* iff(){
 
-    node *tree = create_node("<Loop>");
+            node *tree = create_node("<IFF>");
 
-    if(finalTokenSet[posInFTS].tokenID == "LoopTK"){
-        posInFTS += 1;
-        if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
-            posInFTS += 1;
-            tree->child0 = expr();
-            tree->child1 = ro();
-            tree->child2 = expr();
-            if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+            if(finalTokenSet[posInFTS].tokenID == "IFFTK"){
                 posInFTS += 1;
-                tree->child3 = stat();
+                if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
+                    posInFTS += 1;
+                    tree->child0 = expr();
+                    tree->child1 = ro();
+                    tree->child2 = expr();
+                    if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+                        posInFTS += 1;
+                        stat();
+                    } else
+                        error("SYMTK]");
+                } else
+                    error("SYMTK[");
             } else
-                error("SYMTK]");
-        } else
-            error("SYMTK[");
-    } else
-        error("LoopTK");
+                error("IFFTK");
 
-    return tree;
-}
+            return tree;
+        }
 
-node* assign(){
+        node* loop(){
 
-    node *tree = create_node("<assign>");
+            node *tree = create_node("<Loop>");
 
-    if(finalTokenSet[posInFTS].tokenID == "IDTK"){
-        posInFTS += 1;
+            if(finalTokenSet[posInFTS].tokenID == "LoopTK"){
+                posInFTS += 1;
+                if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
+                    posInFTS += 1;
+                    tree->child0 = expr();
+                    tree->child1 = ro();
+                    tree->child2 = expr();
+                    if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
+                        posInFTS += 1;
+                        tree->child3 = stat();
+                    } else
+                        error("SYMTK]");
+                } else
+                    error("SYMTK[");
+            } else
+                error("LoopTK");
+
+            return tree;
+        }
+
+        node* assign(){
+
+            node *tree = create_node("<assign>");
+
+            if(finalTokenSet[posInFTS].tokenID == "IDTK"){
+                posInFTS += 1;
 
         if(finalTokenSet[posInFTS].tokenID == "SYMTK="){
             posInFTS += 1;
@@ -266,7 +278,7 @@ node* assign(){
 
 node* expr(){
 
-//    if(finalTokenSet[posInFTS].tokenID == "<expr>") {
+//    if(finalTokenSet[posInFTS].tokenID == "<expr>") { //***
 
         node *tree = create_node("<expr>");
 
@@ -328,7 +340,11 @@ node* r(){
     node *tree = create_node("<r>");
 
     if(finalTokenSet[posInFTS].tokenID == "SYMTK["){
+
         posInFTS += 1;
+
+        tree->value = finalTokenSet[posInFTS].tokenLiteral;
+
         tree->child0 = expr();
         if(finalTokenSet[posInFTS].tokenID == "SYMTK]"){
             posInFTS += 1;
@@ -351,8 +367,8 @@ node* z(){
 
     if(finalTokenSet[posInFTS].tokenID == "SYMTK-" ||
         finalTokenSet[posInFTS].tokenID == "SYMTK+"){
-        posInFTS += 1;
-        tree->child0 = expr();
+        posInFTS += 2;
+//        tree->child0 = expr();
         return tree;
     }
 
@@ -403,7 +419,7 @@ node *create_node(string production_name)
     tree->child2 = NULL;
     tree->child3 = NULL;
 
-    tree->literal = production_name;
+    tree->id = production_name;
 
     return tree;
 }

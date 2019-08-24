@@ -54,19 +54,9 @@ vector
 node.h
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/node.h
 
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/printTree.cpp
-printTree.h
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/printTree.h
-
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/printTree.h
 node.h
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/node.h
-
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/scanner.cpp
-scanner.h
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/scanner.h
-token.h
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/token.h
 
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/scanner.h
 token.h
@@ -83,6 +73,8 @@ stdio.h
 -
 stdlib.h
 -
+fstream
+-
 
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/semantics.h
 bits/stdc++.h
@@ -91,18 +83,6 @@ node.h
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/node.h
 scanner.h
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/scanner.h
-
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/statSem.cpp
-statSem.h
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/statSem.h
-scanner.h
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/scanner.h
-statSem.h
-/home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/statSem.h
-vector
--
-algorithm
--
 
 /home/crbaniak/Documents/umslClasses/19spring/4280compilers/Projects/P4/statSem.h
 scanner.h
